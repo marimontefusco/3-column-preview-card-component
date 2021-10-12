@@ -55,9 +55,7 @@ body {
     font: 400 15px 'Lexend Deca', sans-serif;
     color: var(--Transparent-white);
     margin-bottom: 4rem;
-    font-size: 15px;
     line-height: 1.5rem;
-    
 }
 
 .card:first-child {
@@ -142,3 +140,42 @@ footer {
     text-decoration: underline;
 }
 
+@media (max-width:375px) {
+    .container {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card {
+        padding: 2.1rem;
+    }
+    .card img {
+        width: 40px;
+        margin-bottom: 1.5rem;
+    }
+    .card h2 {
+        font-size: 28px;
+        letter-spacing: 1.1px;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    .card p {
+        font-size: 10px;
+        margin-bottom: 1.1rem;
+        line-height: 1.1rem;
+    }
+    .card:first-child {
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+    .card:last-child {
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
+    }
+    .button {
+        font-size: 11px;
+        padding: 0.5rem 0.9rem;
+        width: 65%;
+    }
+}
